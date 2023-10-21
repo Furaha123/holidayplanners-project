@@ -14,7 +14,7 @@ import SideNav from "./Pages/Side";
 import Footer from "./Pages/Footer";
 import TourList from "./Pages/TourList";
 import TourDetail from "./Pages/TourDetail";
-import Login from "./Pages/Login";
+
 import Dashboard from "./Dashboard/Dashboard";
 import SliderBar from "./Dashboard/SliderBar";
 import Compus from "./Dashboard/Compus";
@@ -93,17 +93,14 @@ const App = () => {
         <Route path="/tourlist" element={<TourList />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/tour/:id" element={<TourDetail />} />
-
-        <Route path="sign" element={<SignUp />} />
+        <Route path="signup" element={<SignUp />} />
       </Route>
 
-      <Route path="login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />}>
         <Route path="upcoming" element={<Upcoming />} />
         <Route path="tours" element={<Tour />} />
         <Route index path="home" element={<Rechart />} />
         <Route path="users" element={<Users />} />
-        <Route path="signup" element={<SignUpForm />} />
       </Route>
     </Routes>
   );

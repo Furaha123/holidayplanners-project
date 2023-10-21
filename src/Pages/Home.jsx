@@ -3,33 +3,40 @@ import { SlCalender } from "react-icons/sl";
 import AboutImage from "../Images/airportview.jpg";
 import Travel from "../Images/travel.jpg";
 import { useState } from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
 import Tour1 from "../Images/tour1.jpg";
 import Tour2 from "../Images/tour2.jpg";
 import Tour3 from "../Images/tour3.jpg";
 import Tour4 from "../Images/tour4.jpg";
 import Tour5 from "../Images/tour5.jpg";
-
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 const Home = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3,
+  const slide = [
+    {
+      image: Tour1,
+      country: "Italy",
+      duration: "20 days",
+      groupSize: "50+ people",
+      price: "$699",
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
 
+    {
+      image: Tour2,
+      country: "Germany",
+      duration: "20 days",
+      groupSize: "50+ people",
+      price: "$699",
+    },
+
+    {
+      image: Tour3,
+      country: "India",
+      duration: "20 days",
+      groupSize: "50+ people",
+      price: "$699",
+    },
+  ];
   return (
     <>
       <section className="section-home">
@@ -80,30 +87,29 @@ const Home = () => {
       <section className="section-about">
         <div className="about-section">
           <div className="image-container">
-            <div className="about-description">
-              <h1 className="title">About Us</h1>
-              <h1 className="sub-title">Plan Your Trip With Us</h1>
-              <p className="mountain-text">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts . Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. Mountain
-                destinations often provide a respite from the hustle and bustle
-                of urban life. They are places to disconnect from technology and
-                reconnect with the natural world. The silence of the mountains,
-                interrupted only by the sounds of wind, birds, and rustling
-                leaves, can be a truly therapeutic experience.
-              </p>
-              <button className="styled-button">Read More</button>
-            </div>
-
             <div className="outer-image">
               <img src={AboutImage} alt="Outer Image" />
               <div className="inner-image">
                 <img src={Travel} alt="Inner Image" />
               </div>
             </div>
+          </div>
+          <div className="about-description">
+            <h1 className="title">About Us</h1>
+            <h1 className="sub-title">Plan Your Trip With Us</h1>
+            <p className="mountain-text">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts . Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. Mountain
+              destinations often provide a respite from the hustle and bustle of
+              urban life. They are places to disconnect from technology and
+              reconnect with the natural world. The silence of the mountains,
+              interrupted only by the sounds of wind, birds, and rustling
+              leaves, can be a truly therapeutic experience.
+            </p>
+            <button className="styled-button">Read More</button>
           </div>
         </div>
       </section>
@@ -121,101 +127,38 @@ const Home = () => {
             <p>Next</p>
           </div>
         </div>
-        <div className="card-div">
-          <div className="card-1">
-            <img src={Tour1} alt="tour1" />
-            <span className="image-text">45%</span>
-            <div>
-              <h1 className="italy">Taly</h1>
-              <p className="para-1">
-                Holiday Planners help you travel the world easliy
-              </p>
-              <p className="para-2">
-                Whether it's exploring a bustling city, hiking through serene
-                natural landscapes,,,,,
-              </p>
-              <div className="periods">
-                <div className="duration">
-                  <h3>Duration</h3>
-                  <p className="para-days">4 days</p>
-                </div>
-
-                <div>
-                  <h3 className="group-size ">GroupSize</h3>
-                  <p className="people">4 people</p>
-                </div>
-              </div>
-              <p className="price">$4570.0</p>
+        <div className="card-div" id="card-div">
+          {slide.map((tour, index) => (
+            <div className="card-1">
+              <img src={tour.image} alt="tour1" style={{height:'16rem', width:'17rem'}} />
+              <span className="image-text">45%</span>
               <div>
-                <button className="book-now-button">Book Now</button>
+                <h1 className="italy">{tour.country}</h1>
+                <p className="para-1">
+                  Holiday Planners help you travel the world easliy
+                </p>
+                <p className="para-2">
+                  Whether it's exploring a bustling city, hiking through serene
+                  natural landscapes,,,,,
+                </p>
+                <div className="periods">
+                  <div className="duration">
+                    <h3>Duration</h3>
+                    <p className="para-days">{tour.duration}</p>
+                  </div>
+
+                  <div>
+                    <h3 className="group-size ">GroupSize</h3>
+                    <p className="people">{tour.groupSize}</p>
+                  </div>
+                </div>
+                <p className="price">{tour.price}</p>
+                <div>
+                  <button className="book-now-button">Book Now</button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="card-2">
-            <img src={Tour5} alt="tour1" />
-
-            <div>
-              <h1 className="italy">Rwanda</h1>
-              <p className="para-1">
-                Holiday Planners help you travel the world easliy
-              </p>
-              <p className="para-2">
-                Whether it's exploring a bustling city, hiking through serene
-                natural landscapes,,,,,
-              </p>
-              <div className="periods">
-                <div className="duration">
-                  <h3>Duration</h3>
-                  <p className="para-days">4 days</p>
-                </div>
-
-                <div>
-                  <h3 className="group-size ">GroupSize</h3>
-                  <p className="people">4 people</p>
-                </div>
-              </div>
-              <p className="price">$4570.0</p>
-              <div>
-                <button className="book-now-button">Book Now</button>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-           <div className="card-2">
-            <img src={Tour3} alt="tour1" />
-
-            <div>
-              <h1 className="italy">Germany</h1>
-              <p className="para-1">
-                Holiday Planners help you travel the world easliy
-              </p>
-              <p className="para-2">
-                Whether it's exploring a bustling city, hiking through serene
-                natural landscapes,,,,,
-              </p>
-              <div className="periods">
-                <div className="duration">
-                  <h3>Duration</h3>
-                  <p className="para-days">4 days</p>
-                </div>
-
-                <div>
-                  <h3 className="group-size ">GroupSize</h3>
-                  <p className="people">4 people</p>
-                </div>
-              </div>
-              <p className="price">$4570.0</p>
-              <div>
-                <button className="book-now-button">Book Now</button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </>

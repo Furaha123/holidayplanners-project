@@ -52,7 +52,7 @@ const NavBar = () => {
           <img src={logoImage} alt="my logo" />
         </div>
         <div className="slider-nav">
-          <button className="research-btn">Reserve</button>
+          <button className="research-btn1">Reserve</button>
           <img src={search} alt="my image" className="search-image" />
           <div className="hamburger-menu" onClick={openModal}>
             <div className="bar"></div>

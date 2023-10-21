@@ -35,7 +35,7 @@ function SideNav() {
             <TiTickOutline class="dropdown-icon" />
           </li>
           <li>
-            <a href="login">Login</a>
+            <a href="signup">Login</a>
           </li>
 
           <li>

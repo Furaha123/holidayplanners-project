@@ -47,7 +47,7 @@ p {
   padding: 20px;
   margin-left: 160px;
   transform: translateY(-8px);
- transition: all 0.3s;
+  transition: all 0.3s;
 }
 .slider-nav {
   display: flex;
@@ -66,7 +66,7 @@ p {
   margin-left: 1.9rem;
   margin-right: 50px;
 }
-.research-btn {
+.research-btn1 {
   background-color: #c29d59;
   color: #fff;
   padding: 10px 20px;
@@ -117,8 +117,7 @@ p {
   display: block;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: 30%;
+
   margin-left: 24rem;
   font-size: 30px;
   padding: 20px;
@@ -151,14 +150,10 @@ h4 {
   border-right: 4px solid #c29d59;
   width: 75%;
   padding: 30px;
-  margin-left: 10rem;
-
-  transform: translateY(100px);
 }
 
 .filter-input {
-  width: 200px;
-
+  width: 100%;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
@@ -187,8 +182,9 @@ h4 {
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 7px 15px;
   cursor: pointer;
+  transform: translateX(14px);
 }
 
 .find-button:hover {
@@ -228,126 +224,102 @@ h4 {
 
 /* About CSS */
 
-.section-about {
-  background-color: #ffffff;
-}
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* background-color: red; */
-  height: 800px;
+  gap: 20px;
+  width: 100%;
 
-  margin-top: 60px;
-}
-
-.image-container {
-  flex: 1;
-  padding: 30px;
-  position: relative;
-  margin-top: 290px;
-  margin-left: 3rem;
-  /* background-color: red; */
-  height: 700px;
-  margin-top: -6rem;
+  height: 100vh;
 }
 
 .image-container img {
-  max-width: 100%;
-  height: auto;
+  max-width: 70%;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  height: 88vh;
+  border: 5px solid #c29d59;
+  padding: 5px;
+ 
+ 
+  margin-left: 1rem;
 }
 
 .outer-image {
   position: relative;
-  background-color: #f0f0f0;
-  width: 40%;
-  height: 90vh;
-  border: 5px solid #c29d59;
-  transform: translateY(-420px);
+  margin-left: 9rem;
 }
 
 .inner-image {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 20%;
-  max-width: 80%;
-  height: auto;
+
   z-index: 1;
 }
 
 .inner-image img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 7.4rem;
+  max-width: 90%;
   margin-left: 10rem;
-  height: 40vh;
+  height: 30vh;
   border: 5px solid #c29d59;
 }
 .about-description {
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  font-size: 24px;
+  padding: 10px;
   font-weight: bold;
-  width: 50%;
-  margin-left: 27rem;
-  transform: translateY(30px);
+
+  margin-right: 2rem;
+  margin-top: 30px;
 }
 
 .title {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  width: 20%;
   color: #c29d59;
   position: relative;
-  margin-right: 4rem;
-  transform: translateX(46.9px);
+  margin-left: 4rem;
 }
 
 .title::before {
   content: "";
   position: absolute;
-  left: 150px;
+  left: -9px;
   top: 0;
   width: 4px;
   height: 120%;
   background-color: #c29d59;
 }
-.mountain-text {
-  color: #000;
-}
 
 .sub-title {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #504e4e;
   font-size: 24px;
   margin-top: 20px;
-  transform: translateX(100px);
+  width: 60%;
+  margin-left: 4rem;
 }
 
 .mountain-text {
-  font-size: 20px;
+  font-size: 17px;
   color: #767676;
-  margin-top: 40px;
-  transform: translateX(190px);
+  margin-top: 20px;
   text-align: start;
+  width: 60%;
+  margin-left: 4rem;
 }
 
 .styled-button {
   background-color: #c29d59;
   color: #fff;
   border: none;
-
-  transform: translateY(70px);
+  margin-top: 10px;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
-  margin-left: 1px;
+
+  margin-left: 2rem;
 }
 
 .styled-button:hover {
@@ -356,9 +328,9 @@ h4 {
 
 .tour-section {
   height: fit-content;
-  height: 900px;
-  margin-top: -10rem;
   margin-left: 2rem;
+  transform: translateY(-20rem);
+  height: 200vh;
 }
 
 .tour-head {
@@ -375,7 +347,7 @@ h4 {
 }
 
 .title-tour {
-  flex-direction: row;
+  flex-direction: column;
   font-size: 28px;
   color: #666;
 }
@@ -402,12 +374,10 @@ h4 {
 .next-buttons p:hover {
   background-color: #000;
 }
-.card-div {
+#card-div {
   display: flex;
   width: 100%;
-  transform: translateY(-90rem);
-  height: 500px;
-  gap: 2rem;
+  height: fit-content;
 }
 
 .card-1 {
@@ -417,12 +387,13 @@ h4 {
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  width: 340px;
+  width: 30%;
   height: fit-content;
   position: relative;
   transition: transform 0.3s;
   margin-left: 2.6rem;
   padding: 10px;
+  margin-top: -87rem;
 }
 
 .card-1 img {
@@ -501,7 +472,6 @@ h4 {
 
 .price {
   font-weight: bold;
-
   transform: translateY(20px);
   margin-left: 2rem;
   font-size: 20px;
@@ -522,20 +492,6 @@ h4 {
 
 .book-now-button:hover {
   background-color: #000;
-}
-
-.card-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  width: 340px;
-  height: 460px;
-  position: relative;
-  transition: transform 0.3s;
-  padding: 10px;
 }
 
 .card-2 img {
@@ -561,28 +517,373 @@ h4 {
   margin-left: 11.5rem;
   background-color: #c29d59;
   text-decoration: none;
-
   transform: translateY(34px);
 }
-.card-3 {
+
+/* Base styles for header */
+.header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  width: 300px;
-  position: relative;
-  transition: transform 0.3s;
-  margin: 0 8rem;
-  flex: 0 0 calc(20% - 20px);
+  padding: 10px 20px;
+  background-color: #333; /* Background color for the header */
+  color: #fff; /* Text color */
 }
 
-.card-3 img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Styles for the contact information */
+.contact-us {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contact-us p {
+  margin: 0 10px; /* Add spacing between contact details */
+}
+
+/* Social media icons */
+.socila-media {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.socila-media > * {
+  margin: 0 10px; /* Add spacing between social media icons */
+}
+
+/* Logo and navigation */
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Background color for the logo/navigation */
+  color: #333; /* Text color */
+}
+
+.logo-image img {
+  max-width: 100px; /* Adjust the maximum width for the logo image */
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the "Reserve" button and search image */
+.research-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-image {
+  max-width: 30px; /* Adjust the maximum width for the search image */
+}
+
+/* Styles for the hamburger menu icon */
+.hamburger-menu {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.hamburger-menu .bar {
+  background-color: #333;
+  height: 3px;
+  width: 30px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contact-us {
+    margin: 10px 0;
+  }
+
+  .socila-media {
+    margin: 10px 0;
+  }
+
+  .logo {
+    flex-direction: column;
+    /* padding: 10px; */
+
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider-nav {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .research-btn1 {
+    margin: 0;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    width: 40px;
+  }
+
+  .bar {
+    background-color: #333;
+    height: 3px;
+    width: 20px;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  .search-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20rem;
+  }
+
+  .center-words {
+    font-size: 24px;
+    margin-left: 13rem;
+    /* background-color: red; */
+    margin-top: 10px;
+  }
+
+  .center-words h1 {
+    font-size: 23px;
+    padding: 10px;
+  }
+  .center-words h4 {
+    display: flex;
+    font-size: 24px;
+  }
+  .description {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .data-filters {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filter-input {
+    padding: 10px;
+  }
+  .filter-select {
+    width: 97%;
+  }
+  .find-button {
+    width: 97%;
+    margin-left: -1rem;
+  }
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image-container {
+    width: 80%;
+    margin-top: 8rem;
+  }
+  .about-description {
+    margin-top: 5rem;
+    padding-left: 50px;
+    margin-left: 3rem;
+  }
+  .title {
+    padding-left: 10px;
+  }
+  .tour-section {
+    margin-top: 33rem;
+  }
+
+  #card-div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: -90rem;
+    margin-bottom: 10px;
+    transform: translateY(-90px);
+  }
+  .card-1 {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .italy {
+    border-radius: 10px;
+    margin-left: 10rem;
+  }
+  .para-1 {
+    margin-left: 5rem;
+  }
+  .para-2 {
+    margin-left: 3rem;
+  }
+
+  .price {
+    transform: translateY(70px);
+  }
+
+  .book-now-button {
+    margin-left: 26rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .contact-us {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+  }
+  .contact-us p {
+    font-size: 12px;
+  }
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-image {
+    margin-left: 1rem;
+  }
+  .center-words {
+    padding: 10px;
+    width: 58%;
+    margin-left: 8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .data-filters {
+    margin: 0;
+    width: 100%;
+    transform: translateY(20px);
+  }
+  .image-container {
+    height: 59vh;
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .outer-image {
+    margin-top: 5rem;
+    margin-left: -1rem;
+    width: 100%;
+  }
+
+  .outer-image img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .inner-image img {
+    margin-left: 2rem;
+    height: 30vh;
+    margin-top: 4rem;
+  }
+
+  .about-description {
+    transform: translateY(10rem);
+
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+  }
+  .mountain-text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .title {
+    display: inline-block;
+    width: 300px;
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .sub-title {
+    display: inline-block;
+    width: 300px;
+    font-size: 23px;
+    margin: 0;
+  }
+
+  .tour-section {
+    transform: translateY(-6rem);
+  }
+  .tour-head {
+    width: 100%;
+    margin-left: 0;
+  }
+  .next-buttons {
+    display: none;
+  }
+  #card-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    transform: translateY(10px);
+    margin-left: -4rem;
+  }
+  .card-1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 70vh;
+  }
+  .para-1 {
+    font-size: 16px;
+    width: 67%;
+  }
+
+  .para-2 {
+    width: 67%;
+    margin-left: 5rem;
+  }
+
+  .periods {
+    width: 67%;
+
+    margin-left: 5rem;
+  }
+
+  .price {
+    margin-top: -5rem;
+    width: 20%;
+    padding: 3px;
+    padding-left: 13px;
+    margin-left: 2rem;
+  }
+
+  .book-now-button {
+    margin-top: 10px;
+    margin-left: 10rem;
+  }
 }
