@@ -127,10 +127,14 @@ const Home = () => {
             <p>Next</p>
           </div>
         </div>
-        <div className="card-div" id="card-div">
+        <div id="card-div">
           {slide.map((tour, index) => (
             <div className="card-1">
-              <img src={tour.image} alt="tour1" style={{height:'16rem', width:'17rem'}} />
+              <img
+                src={tour.image}
+                alt="tour1"
+                style={{ height: "16rem", width: "17rem" }}
+              />
               <span className="image-text">45%</span>
               <div>
                 <h1 className="italy">{tour.country}</h1>

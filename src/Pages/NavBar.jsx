@@ -9,16 +9,15 @@ import { useState } from "react";
 import logoImage from "../Images/logo.png";
 import search from "../Images/search.png";
 import "../CSS/NavBar.css";
-import SideNav from "./Side";
+import SideNav from "../Pages/Side";
 
 const NavBar = () => {
-  
   window.addEventListener("scroll", function () {
     const logo = document.querySelector(".logo");
     if (window.scrollY > 0) {
-      logo.style.transform = "translateY(-5px) scale(1.1)"; 
+      logo.style.transform = "translateY(-5px) scale(1.1)";
     } else {
-      logo.style.transform = "translateY(-8px)"; 
+      logo.style.transform = "translateY(-8px)";
     }
   });
 

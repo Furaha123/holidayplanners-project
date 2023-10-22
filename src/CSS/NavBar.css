@@ -229,7 +229,6 @@ h4 {
   align-items: center;
   gap: 20px;
   width: 100%;
-
   height: 100vh;
 }
 
@@ -239,9 +238,7 @@ h4 {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border: 5px solid #c29d59;
   padding: 5px;
- 
- 
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 .outer-image {
@@ -252,8 +249,7 @@ h4 {
 .inner-image {
   position: absolute;
   top: 60%;
-  left: 20%;
-
+  left: 50%;
   z-index: 1;
 }
 
@@ -266,9 +262,7 @@ h4 {
 .about-description {
   padding: 10px;
   font-weight: bold;
-
-  margin-right: 2rem;
-  margin-top: 30px;
+  /* background-color: red; */
 }
 
 .title {
@@ -294,9 +288,9 @@ h4 {
   letter-spacing: 3px;
   color: #504e4e;
   font-size: 24px;
-  margin-top: 20px;
+
   width: 60%;
-  margin-left: 4rem;
+  text-align: start;
 }
 
 .mountain-text {
@@ -327,10 +321,8 @@ h4 {
 }
 
 .tour-section {
-  height: fit-content;
   margin-left: 2rem;
-  transform: translateY(-20rem);
-  height: 200vh;
+  margin-top: 90px;
 }
 
 .tour-head {
@@ -375,7 +367,9 @@ h4 {
   background-color: #000;
 }
 #card-div {
+  
   display: flex;
+flex-direction: row;
   width: 100%;
   height: fit-content;
 }
@@ -383,6 +377,7 @@ h4 {
 .card-1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -415,7 +410,6 @@ h4 {
   text-orientation: mixed;
 }
 .min-tour {
-  /* background-color: red; */
   border-left: 4px solid #c29d59;
 }
 .para-1 {
@@ -520,7 +514,6 @@ h4 {
   transform: translateY(34px);
 }
 
-/* Base styles for header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -530,7 +523,6 @@ h4 {
   color: #fff; /* Text color */
 }
 
-/* Styles for the contact information */
 .contact-us {
   display: flex;
   align-items: center;
@@ -562,41 +554,17 @@ h4 {
 }
 
 .logo-image img {
-  max-width: 100px; /* Adjust the maximum width for the logo image */
+  max-width: 100px;
 }
 
-.slider-nav {
-  display: flex;
-  align-items: center;
-}
+/* 
 
-/* Styles for the "Reserve" button and search image */
-.research-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
 
-.search-image {
-  max-width: 30px; /* Adjust the maximum width for the search image */
-}
 
-/* Styles for the hamburger menu icon */
-.hamburger-menu {
-  cursor: pointer;
-  margin-left: 10px;
-}
 
-.hamburger-menu .bar {
-  background-color: #333;
-  height: 3px;
-  width: 30px;
-  margin: 4px 0;
-  transition: 0.4s;
-}
+
+
+
 
 /* Media query for responsiveness */
 @media (max-width: 800px) {
@@ -730,7 +698,7 @@ h4 {
     height: fit-content;
     margin-top: -90rem;
     margin-bottom: 10px;
-    transform: translateY(-90px);
+    /* transform: translateY(-90px); */
   }
   .card-1 {
     width: 90%;
@@ -812,9 +780,9 @@ h4 {
   }
 
   .about-description {
-    transform: translateY(10rem);
-
+    transform: translateY(8rem);
     width: 100%;
+
     margin: 0;
     height: fit-content;
   }
@@ -829,34 +797,36 @@ h4 {
     margin-left: 0;
   }
   .sub-title {
-    display: inline-block;
-    width: 300px;
     font-size: 23px;
-    margin: 0;
   }
 
   .tour-section {
-    transform: translateY(-6rem);
+    width: 100%;
+    height: fit-content;
   }
   .tour-head {
-    width: 100%;
-    margin-left: 0;
+    margin-top: -10px;
+    font-size: 12px;
+  }
+  .title-tour {
+    width: 300px;
+    display: inline-block;
+    font-size: 22px;
   }
   .next-buttons {
     display: none;
   }
   #card-div {
     display: flex;
-    flex-direction: column;
+
     gap: 2rem;
     width: 100%;
-    transform: translateY(10px);
-    margin-left: -4rem;
+    /* transform: translateY(10px); */
   }
   .card-1 {
-    margin-top: 10px;
-    width: 100%;
-    height: 70vh;
+    /* margin-top: -10rem; */
+    /* width: 100%; */
+    /* height: 70vh; */
   }
   .para-1 {
     font-size: 16px;
@@ -865,6 +835,7 @@ h4 {
 
   .para-2 {
     width: 67%;
+
     margin-left: 5rem;
   }
 
